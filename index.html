@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A little birthday surprise page for Vish — memories, a note, and a celebration.">
+  <meta name="theme-color" content="#fff7f8">
+
+  <title>Happy Birthday Vish ❤️</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@400;600;700&family=Caveat:wght@400;500;600&family=Parisienne&family=Great+Vibes&family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jsPDF for PDF Generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+  <a class="skip-link" href="#memories">Skip to memories</a>
+
+  <main>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" aria-label="Hero banner with photo of Vish">
+
+    <div class="hero-copy">
+
+      <h1>
+  Happy Birthday,<br>
+
+  <span class="vish-text">
+    Vish ❤️
+  </span>
+</h1>
+
+      <p>
+        professional headache,<br>
+        serial yapper,<br>
+        and somehow still my favorite person
+      </p>
+
+    <a href="#memories" class="surprise-btn">
+  Open Your Birthday Surprise ✨
+</a>
+
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <img src="images/vish-main.jpeg" class="hero-img" alt="Vish smiling" loading="eager">
+    </div>
+
+  </section>
+
+  <!-- MEMORIES -->
+
+  <section id="memories" class="memories" tabindex="-1">
+
+    <h2>Some Of Our Favorites </h2>
+
+    <div class="memory-grid">
+      <div class="memory-scroller">
+        <!-- PHOTO 1 -->
+        <div class="memory-card">
+          <img src="images/memory1.jpeg" alt="Memory 1: quiet moment" loading="lazy">
+          <p>
+            The morning after questionable decisions. IYKYK.
+          </p>
+        </div>
+
+        <!-- PHOTO 2 -->
+        <div class="memory-card">
+          <img src="images/memory2.jpeg" alt="Memory 2: candid laugh" loading="lazy">
+          <p>
+            This one still makes me smile.
+          </p>
+        </div>
+
+        <!-- PHOTO 3 -->
+        <div class="memory-card">
+          <img src="images/memory3.jpeg" alt="Memory 3: playful pose" loading="lazy">
+          <p>
+            One of those memories that was worth everything it took.
+          </p>
+        </div>
+
+        <!-- PHOTO 4 -->
+        <div class="memory-card">
+          <img src="images/memory4.jpeg" alt="Memory 4" loading="lazy">
+          <p>
+            My favorite face to annoy.
+          </p>
+        </div>
+
+        <!-- PHOTO 5 -->
+        <div class="memory-card">
+          <img src="images/memory5.jpeg" alt="Memory 5" loading="lazy">
+          <p>
+            Side by side, always.
+          </p>
+        </div>
+
+        <!-- PHOTO 6 -->
+        <div class="memory-card">
+          <img src="images/memory6.jpeg" alt="Memory 6" loading="lazy">
+          <p>
+            A little too attached, but I'll allow it.
+          </p>
+        </div>
+
+        <!-- DUPLICATED FOR INFINITE SCROLL -->
+        <div class="memory-card" aria-hidden="true">
+          <img src="images/memory1.jpeg" alt="" loading="lazy">
+          <p>
+            The morning after questionable decisions. IYKYK.
+          </p>
+        </div>
+
+        <div class="memory-card" aria-hidden="true">
+          <img src="images/memory2.jpeg" alt="" loading="lazy">
+          <p>
+            This one still makes me smile.
+          </p>
+        </div>
+
+        <div class="memory-card" aria-hidden="true">
+          <img src="images/memory3.jpeg" alt="" loading="lazy">
+          <p>
+            One of those memories that was worth everything it took.
+          </p>
+        </div>
+
+        <div class="memory-card" aria-hidden="true">
+          <img src="images/memory4.jpeg" alt="" loading="lazy">
+          <p>
+            My favorite face to annoy.
+          </p>
+        </div>
+
+        <div class="memory-card" aria-hidden="true">
+          <img src="images/memory5.jpeg" alt="" loading="lazy">
+          <p>
+            Side by side, always.
+          </p>
+        </div>
+
+        <div class="memory-card" aria-hidden="true">
+          <img src="images/memory6.jpeg" alt="" loading="lazy">
+          <p>
+            A little too attached, but I'll allow it.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3>
+      And thousands more that we don't have pictures of...
+    </h3>
+
+  </section>
+
+  <!-- LETTER SECTION -->
+
+  <section class="letter-section" aria-labelledby="letter-heading">
+
+    <div class="letter-box">
+
+      <h2 id="letter-heading">A Little Note For You ❤️</h2>
+
+      <p>
+        Vish,
+      </p>
+
+      <p>
+        I don't really express much at times, but I hope you know that you mean a lot to me.
+      </p>
+
+      <p>
+        You've been there for me through so many phases of my life, even the ones where I acted like I didn't need anyone. Somehow, you've always known when something was wrong, even when I pretended everything was fine.
+      </p>
+
+      <p>
+        One thing I've never had to question is that you'll always stand by me.
+        And I hope you know the same goes for me.
+    </p>
+      <p>
+        You can run to me for literally anything. Good days, bad days, random drama, existential crises, terrible decisions, all of it. I'll always be here to listen, support you, protect you, and take care of you... even though somehow I'm still the younger one here.
+      </p>
+
+      <p>
+        Thank you for all the laughs, all the memories, all the inside jokes, all the random calls, and for being the kind of person you are. I truly love you.
+      </p>
+      
+      <p>
+        Some of my favorite memories have you in them. And honestly, some of the best ones aren't even in the pictures.
+      </p>
+
+      <p>
+        Also, please stop calling me when I'm sleeping. If my internet is off, just assume I'm asleep or probably busy and leave me alone, bitch. 😂
+      </p>
+
+      <p>
+        I genuinely value you a lot more than I say out loud, and I'm really grateful that life gave me you.
+      </p>
+
+      <p>
+        You're getting older now, so please try acting your age for once. Make responsible decisions, think before you do something stupid, and stop giving me mini heart attacks every other day.
+      </p>
+
+      <p>
+        Knowing you, that's probably not going to happen, but at least I can hope.
+      </p>
+
+      <p>
+        I hope this year gives you more reasons to smile, more memories worth keeping, and fewer opportunities to make questionable decisions.
+      </p>
+
+      <p class="ending">Happiest Birthday Vish!❤️</p>
+      <div class="sticky-notes">
+              <div class="note-chaos">
+        messy<br>
+        childish<br>
+        chaos queen<br>
+        (but adorable)
+      </div>
+      <div class="note-list">
+        <h4>you are:</h4>
+        <ul>
+          <li>vibrant</li>
+          <li>fun-loving</li>
+          <li>caring</li>
+          <li>cute</li>
+          <li>annoying af</li>
+          <li>my person</li>
+        </ul>
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+<!-- ENDING SECTION -->
+
+<section class="ending-section">
+
+  <div class="music-card">
+
+    <h3>Thank you for making life a little lighter!</h3>
+
+    <p>
+      🎵 A song that reminds me of us 
+    </p>
+
+    <audio controls preload="metadata">
+      <source src="audio/COM.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+  </div>
+
+  <p class="final-line">
+    here's to more memories,<br>
+    more chaos,<br>
+    and many more years<br>
+    of annoying each other...✨
+  </p>
+
+</section>
