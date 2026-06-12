@@ -26,4 +26,5 @@ A responsive birthday-themed website built using HTML, CSS, and JavaScript.
 
 ## License
 
-This project is for personal and educational use.
+This project is for personal and educational use. Can be accessed via https://happy2you.netlify.app/
+
