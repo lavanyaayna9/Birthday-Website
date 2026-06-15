@@ -1,0 +1,26 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "New Threat Model",
+    "owner": "Alldigi",
+    "description": "1) No utilising of external api endpoints or third party. \n2) All of the setup is on on-premises\n3) employee role and reporting manager role, Payroll admin and operations admin (4 roles are there)\nSPOC - Operation team & Client Finance and HR.\n4) It is in Shared model\n5) dedicated servers used for this client. separate instance (separate servers)\n6) single file server (IDC Segment)\n7) VLAN Segmentation (need clarification for IDC LAN) - All alldigi employee have reachablility to this IDC LAN segment\n8) Accessing the application from outside (its public), that should be restrcited from allsec side too.\n \nPayroll admin -> upload inputs of new joiners -> internally maker checker process -> data will be stored on the alldigi DB.\n \n9) WAF -> Load balancer (Big IP F5)\n10) Audit trail -> Database level saved. application side logging (quick input model)\n11) Code review (Fortify - Feb march reports required from allsec side)\n12) separate instances (UAT, DEV, PROD) - hosted in same databases\n13) Azure DevOps (CI-CD pipelines used to push and commit code)\n14) SFTP Server (Symantec endpoint installed along with Seqrite)\nOWASP Component needs to shared to Alldigi and get outputs.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "Lavanya",
+    "threatTop": 0
+  }
+}
